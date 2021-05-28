@@ -1,0 +1,30 @@
+{
+  "name": "@daaku/cf-static-deploy",
+  "author": "Naitik Shah <n@daaku.org>",
+  "version": "1.0.0",
+  "description": "Deploy static sites on AWS CloudFront backed by S3.",
+  "repository": "git@github.com:daaku/cf-static-deploy",
+  "bin": "./bin.mjs",
+  "prettier": "prettier-config-daaku",
+  "scripts": {
+    "check": "prettier -w .",
+    "deploy": "npm publish --access=public"
+  },
+  "keywords": [
+    "aws",
+    "static",
+    "deploy"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "prettier": "^2.3.0",
+    "prettier-config-daaku": "^1.0.0"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.918.0",
+    "mime-types": "^2.1.30",
+    "nanoid": "^3.1.23",
+    "puppeteer-core": "^9.1.1",
+    "walker": "^1.0.7"
+  }
+}
