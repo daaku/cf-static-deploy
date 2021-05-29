@@ -1,6 +1,7 @@
 import AWS from 'aws-sdk';
 import { readFile } from 'fs/promises';
 import { nanoid } from 'nanoid';
+import { extname } from 'path';
 import Walker from 'walker';
 import { contentType } from 'mime-types';
 
@@ -38,7 +39,7 @@ async function upload(s3, filename, diskBase, bucket) {
       Key: key,
       Body: body,
       ACL: 'public-read',
-      ContentType: contentType(filename) || 'application/octet-stream',
+      ContentType: contentType(extname(filename)) || 'application/octet-stream',
       CacheControl: cacheControl,
     })
     .promise();
