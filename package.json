@@ -1,7 +1,7 @@
 {
   "name": "@daaku/cf-static-deploy",
   "author": "Naitik Shah <n@daaku.org>",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Deploy static sites on AWS CloudFront backed by S3.",
   "repository": "git@github.com:daaku/cf-static-deploy",
   "bin": "./bin.mjs",
