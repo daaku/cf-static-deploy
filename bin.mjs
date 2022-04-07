@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import AWS from 'aws-sdk';
 import { readFile } from 'fs/promises';
 import { nanoid } from 'nanoid';
