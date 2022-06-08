@@ -23,7 +23,7 @@
   "dependencies": {
     "aws-sdk": "^2.1013.0",
     "mime-types": "^2.1.33",
-    "nanoid": "^3.1.30",
+    "nanoid": "^4.0.0",
     "walker": "^1.0.8"
   }
 }
